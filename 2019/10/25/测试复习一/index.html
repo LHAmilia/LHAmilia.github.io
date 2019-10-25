@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Hexo</title>
+  <title>软测复习 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="一、怎么在linux中安装MySQL数据库？首先检查是否安装了数据库   rpm -qa|grep mysql* 去MySQL官网下载最新的rpm包 我们可以只选择上传与安装自己需要的服务 数据库中包含依赖包，需要在线下载， yum install perl 安装完成后，启动数据库服务  service mysqld network 连接数据库，mysql -h localhost -u root">
+<meta property="og:type" content="article">
+<meta property="og:title" content="软测复习">
+<meta property="og:url" content="http://yoursite.com/2019/10/25/测试复习一/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、怎么在linux中安装MySQL数据库？首先检查是否安装了数据库   rpm -qa|grep mysql* 去MySQL官网下载最新的rpm包 我们可以只选择上传与安装自己需要的服务 数据库中包含依赖包，需要在线下载， yum install perl 安装完成后，启动数据库服务  service mysqld network 连接数据库，mysql -h localhost -u root">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-25T09:14:16.639Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="软测复习">
+<meta name="twitter:description" content="一、怎么在linux中安装MySQL数据库？首先检查是否安装了数据库   rpm -qa|grep mysql* 去MySQL官网下载最新的rpm包 我们可以只选择上传与安装自己需要的服务 数据库中包含依赖包，需要在线下载， yum install perl 安装完成后，启动数据库服务  service mysqld network 连接数据库，mysql -h localhost -u root">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,76 +154,173 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-测试复习一" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      软测复习
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/25/测试复习一/" class="archive-article-date">
+
+        
+        <a href="/2019/10/25/测试复习一/" class="archive-article-date">
   	<time datetime="2019-10-25T09:13:07.838Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-25</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/25/测试复习一/">软测复习</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="一、怎么在linux中安装MySQL数据库？"><a href="#一、怎么在linux中安装MySQL数据库？" class="headerlink" title="一、怎么在linux中安装MySQL数据库？"></a>一、怎么在linux中安装MySQL数据库？</h5><pre><code>首先检查是否安装了数据库   rpm -qa|grep mysql*
+去MySQL官网下载最新的rpm包
+我们可以只选择上传与安装自己需要的服务
+数据库中包含依赖包，需要在线下载， yum install perl
+安装完成后，启动数据库服务  service mysqld network
+连接数据库，mysql -h localhost -u root -p</code></pre><h5 id="二、在Linux-里面怎样安装jdk-tomcat，搭建tomcat环境，发布java代码的"><a href="#二、在Linux-里面怎样安装jdk-tomcat，搭建tomcat环境，发布java代码的" class="headerlink" title="二、在Linux 里面怎样安装jdk+tomcat，搭建tomcat环境，发布java代码的"></a>二、在Linux 里面怎样安装jdk+tomcat，搭建tomcat环境，发布java代码的</h5><pre><code>在网上下载JDK、Tomcat安装包
+使用xftp工具将下载好的安装包上传到linux服务器上
+在linux中进行解压   tar -xzvf 包名
+配置JDK环境变量（JAVA-HOME、CLASSPATH、PATH）
+配置好之后验证是否已经安装好JDK    java  -version
+进入到Apache的bin目录下，开启tomcat， sh startup .sh 或 ./startup.sh
+配置成功会看到一个网页（有一个含有猫的logo）
+将需要发布的项目放到tomcat的发布路径webapps路径下
+Tomcat解压并发布完成后，可以在浏览器看到所发布的项目</code></pre><p>推荐网站：<a href="https://www.cnblogs.com/jieerma666/p/7527338.html" target="_blank" rel="noopener">https://www.cnblogs.com/jieerma666/p/7527338.html</a></p>
+<h5 id="三、windows里面怎么-关闭端口，端口冲突怎么处理"><a href="#三、windows里面怎么-关闭端口，端口冲突怎么处理" class="headerlink" title="三、windows里面怎么 关闭端口，端口冲突怎么处理"></a>三、windows里面怎么 关闭端口，端口冲突怎么处理</h5><pre><code>开始----&gt;运行----&gt;cmd，或者是window+R组合键，调出命令窗口
+输入命令：netstat -ano，列出所有端口的情况。比如是49157，首先找到它。
+查看被占用端口对应的PID，输入命令：netstat -aon|findstr “49157”回车，记下最后一位数字，即PID,这里是 2720。
+继续输入tasklist|findstr “2720”，回车，查看是哪个进程或者程序占用了2720端口
+使用taskkill /pid  2720</code></pre>
+      
 
-        <div class="article-info info-on-right">
-          
-          
-
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/25/测试复习一/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/23/HTTP协议/" class="archive-article-date">
-  	<time datetime="2019-10-23T10:32:10.818Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/23/HTTP协议/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">第一次博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/23/HTTP协议/">第一次博客</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -242,8 +343,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

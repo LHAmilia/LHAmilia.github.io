@@ -152,6 +152,86 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-测试复习一" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/25/测试复习一/">软测复习</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/25/测试复习一/" class="archive-article-date">
+  	<time datetime="2019-10-25T09:13:07.838Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="一、怎么在linux中安装MySQL数据库？"><a href="#一、怎么在linux中安装MySQL数据库？" class="headerlink" title="一、怎么在linux中安装MySQL数据库？"></a>一、怎么在linux中安装MySQL数据库？</h5><pre><code>首先检查是否安装了数据库   rpm -qa|grep mysql*
+去MySQL官网下载最新的rpm包
+我们可以只选择上传与安装自己需要的服务
+数据库中包含依赖包，需要在线下载， yum install perl
+安装完成后，启动数据库服务  service mysqld network
+连接数据库，mysql -h localhost -u root -p</code></pre><h5 id="二、在Linux-里面怎样安装jdk-tomcat，搭建tomcat环境，发布java代码的"><a href="#二、在Linux-里面怎样安装jdk-tomcat，搭建tomcat环境，发布java代码的" class="headerlink" title="二、在Linux 里面怎样安装jdk+tomcat，搭建tomcat环境，发布java代码的"></a>二、在Linux 里面怎样安装jdk+tomcat，搭建tomcat环境，发布java代码的</h5><pre><code>在网上下载JDK、Tomcat安装包
+使用xftp工具将下载好的安装包上传到linux服务器上
+在linux中进行解压   tar -xzvf 包名
+配置JDK环境变量（JAVA-HOME、CLASSPATH、PATH）
+配置好之后验证是否已经安装好JDK    java  -version
+进入到Apache的bin目录下，开启tomcat， sh startup .sh 或 ./startup.sh
+配置成功会看到一个网页（有一个含有猫的logo）
+将需要发布的项目放到tomcat的发布路径webapps路径下
+Tomcat解压并发布完成后，可以在浏览器看到所发布的项目</code></pre><p>推荐网站：<a href="https://www.cnblogs.com/jieerma666/p/7527338.html" target="_blank" rel="noopener">https://www.cnblogs.com/jieerma666/p/7527338.html</a></p>
+<h5 id="三、windows里面怎么-关闭端口，端口冲突怎么处理"><a href="#三、windows里面怎么-关闭端口，端口冲突怎么处理" class="headerlink" title="三、windows里面怎么 关闭端口，端口冲突怎么处理"></a>三、windows里面怎么 关闭端口，端口冲突怎么处理</h5><pre><code>开始----&gt;运行----&gt;cmd，或者是window+R组合键，调出命令窗口
+输入命令：netstat -ano，列出所有端口的情况。比如是49157，首先找到它。
+查看被占用端口对应的PID，输入命令：netstat -aon|findstr “49157”回车，记下最后一位数字，即PID,这里是 2720。
+继续输入tasklist|findstr “2720”，回车，查看是哪个进程或者程序占用了2720端口
+使用taskkill /pid  2720</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/25/测试复习一/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-HTTP协议" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
