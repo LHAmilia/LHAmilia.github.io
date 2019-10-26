@@ -152,6 +152,63 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-软测环境搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: 第一次博客<br>date:<br>categories: </p>
+<ul>
+<li>tags:</li>
+<li>summary: 第一次博客<h5 id="一、测试环境如何搭建？"><a href="#一、测试环境如何搭建？" class="headerlink" title="一、测试环境如何搭建？"></a>一、测试环境如何搭建？</h5>  安装依赖软件（jdk tomcat mysql等）<br>  导入基础数据（导入初始化数据、建表）<br>  获取代码（编译、打包）<br>  部署在tomcat的webapps目录下<br>  修改配置文件<br>  启动服务</li>
+</ul>
+<p><em>一般根据开发给的部署文档搭建</em></p>
+<h5 id="二、搭建测试环境应该注意哪些？"><a href="#二、搭建测试环境应该注意哪些？" class="headerlink" title="二、搭建测试环境应该注意哪些？"></a>二、搭建测试环境应该注意哪些？</h5><pre><code>测试环境（JDK Tmacat MySQL）和生产环境的版本保持一致
+服务器部署架构、服务器类型尽量与生产环境保持一致
+一般先把数据库表相关操作完成，再进行代码部署</code></pre><h5 id="三、测试环境升级？"><a href="#三、测试环境升级？" class="headerlink" title="三、测试环境升级？"></a>三、测试环境升级？</h5><pre><code>完全升级：根据开发文档给的升级文档，查看代码包、数据库脚本包是否齐全，然后把测试环境的数据库、被测系统的代码先备份再删除，然后根据开发最新的文件和代码进行升级部署；升级只有做个基本的功能验证，如果验证失败，测试环境按之前的备份包进行回滚
+增量升级：从SVN上获取开发提交的测试补丁——停止Tomcat，备份webapps目录下部署的项目代码——使用升级补丁进行升级——清除日志——启动tomcat——验证是否进入被测系统</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/26/软测环境搭建/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-测试复习一" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

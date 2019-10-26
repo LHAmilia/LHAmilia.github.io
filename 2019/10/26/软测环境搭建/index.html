@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>软测复习 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、怎么在linux中安装MySQL数据库？首先检查是否安装了数据库   rpm -qa|grep mysql* 去MySQL官网下载最新的rpm包 我们可以只选择上传与安装自己需要的服务 数据库中包含依赖包，需要在线下载， yum install perl 安装完成后，启动数据库服务  service mysqld network 连接数据库，mysql -h localhost -u root">
+  <meta name="description" content="title: 第一次博客date:categories:   tags: summary: 第一次博客一、测试环境如何搭建？  安装依赖软件（jdk tomcat mysql等）  导入基础数据（导入初始化数据、建表）  获取代码（编译、打包）  部署在tomcat的webapps目录下  修改配置文件  启动服务  一般根据开发给的部署文档搭建 二、搭建测试环境应该注意哪些？测试环境（JDK">
 <meta property="og:type" content="article">
-<meta property="og:title" content="软测复习">
-<meta property="og:url" content="http://yoursite.com/2019/10/25/测试复习一/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/10/26/软测环境搭建/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一、怎么在linux中安装MySQL数据库？首先检查是否安装了数据库   rpm -qa|grep mysql* 去MySQL官网下载最新的rpm包 我们可以只选择上传与安装自己需要的服务 数据库中包含依赖包，需要在线下载， yum install perl 安装完成后，启动数据库服务  service mysqld network 连接数据库，mysql -h localhost -u root">
+<meta property="og:description" content="title: 第一次博客date:categories:   tags: summary: 第一次博客一、测试环境如何搭建？  安装依赖软件（jdk tomcat mysql等）  导入基础数据（导入初始化数据、建表）  获取代码（编译、打包）  部署在tomcat的webapps目录下  修改配置文件  启动服务  一般根据开发给的部署文档搭建 二、搭建测试环境应该注意哪些？测试环境（JDK">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-25T09:14:16.639Z">
+<meta property="og:updated_time" content="2019-10-26T03:14:42.435Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="软测复习">
-<meta name="twitter:description" content="一、怎么在linux中安装MySQL数据库？首先检查是否安装了数据库   rpm -qa|grep mysql* 去MySQL官网下载最新的rpm包 我们可以只选择上传与安装自己需要的服务 数据库中包含依赖包，需要在线下载， yum install perl 安装完成后，启动数据库服务  service mysqld network 连接数据库，mysql -h localhost -u root">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="title: 第一次博客date:categories:   tags: summary: 第一次博客一、测试环境如何搭建？  安装依赖软件（jdk tomcat mysql等）  导入基础数据（导入初始化数据、建表）  获取代码（编译、打包）  部署在tomcat的webapps目录下  修改配置文件  启动服务  一般根据开发给的部署文档搭建 二、搭建测试环境应该注意哪些？测试环境（JDK">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,45 +154,22 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-测试复习一" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-软测环境搭建" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      软测复习
-    </h1>
-  
-
-        
-        <a href="/2019/10/25/测试复习一/" class="archive-article-date">
-  	<time datetime="2019-10-25T09:13:07.838Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-25</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h5 id="一、怎么在linux中安装MySQL数据库？"><a href="#一、怎么在linux中安装MySQL数据库？" class="headerlink" title="一、怎么在linux中安装MySQL数据库？"></a>一、怎么在linux中安装MySQL数据库？</h5><pre><code>首先检查是否安装了数据库   rpm -qa|grep mysql*
-去MySQL官网下载最新的rpm包
-我们可以只选择上传与安装自己需要的服务
-数据库中包含依赖包，需要在线下载， yum install perl
-安装完成后，启动数据库服务  service mysqld network
-连接数据库，mysql -h localhost -u root -p</code></pre><h5 id="二、在Linux-里面怎样安装jdk-tomcat，搭建tomcat环境，发布java代码的"><a href="#二、在Linux-里面怎样安装jdk-tomcat，搭建tomcat环境，发布java代码的" class="headerlink" title="二、在Linux 里面怎样安装jdk+tomcat，搭建tomcat环境，发布java代码的"></a>二、在Linux 里面怎样安装jdk+tomcat，搭建tomcat环境，发布java代码的</h5><pre><code>在网上下载JDK、Tomcat安装包
-使用xftp工具将下载好的安装包上传到linux服务器上
-在linux中进行解压   tar -xzvf 包名
-配置JDK环境变量（JAVA-HOME、CLASSPATH、PATH）
-配置好之后验证是否已经安装好JDK    java  -version
-进入到Apache的bin目录下，开启tomcat， sh startup .sh 或 ./startup.sh
-配置成功会看到一个网页（有一个含有猫的logo）
-将需要发布的项目放到tomcat的发布路径webapps路径下
-Tomcat解压并发布完成后，可以在浏览器看到所发布的项目</code></pre><p>推荐网站：<a href="https://www.cnblogs.com/jieerma666/p/7527338.html" target="_blank" rel="noopener">https://www.cnblogs.com/jieerma666/p/7527338.html</a></p>
-<h5 id="三、windows里面怎么-关闭端口，端口冲突怎么处理"><a href="#三、windows里面怎么-关闭端口，端口冲突怎么处理" class="headerlink" title="三、windows里面怎么 关闭端口，端口冲突怎么处理"></a>三、windows里面怎么 关闭端口，端口冲突怎么处理</h5><pre><code>开始----&gt;运行----&gt;cmd，或者是window+R组合键，调出命令窗口
-输入命令：netstat -ano，列出所有端口的情况。比如是49157，首先找到它。
-查看被占用端口对应的PID，输入命令：netstat -aon|findstr “49157”回车，记下最后一位数字，即PID,这里是 2720。
-继续输入tasklist|findstr “2720”，回车，查看是哪个进程或者程序占用了2720端口
-使用taskkill /pid  2720</code></pre>
+        <hr>
+<p>title: 第一次博客<br>date:<br>categories: </p>
+<ul>
+<li>tags:</li>
+<li>summary: 第一次博客<h5 id="一、测试环境如何搭建？"><a href="#一、测试环境如何搭建？" class="headerlink" title="一、测试环境如何搭建？"></a>一、测试环境如何搭建？</h5>  安装依赖软件（jdk tomcat mysql等）<br>  导入基础数据（导入初始化数据、建表）<br>  获取代码（编译、打包）<br>  部署在tomcat的webapps目录下<br>  修改配置文件<br>  启动服务</li>
+</ul>
+<p><em>一般根据开发给的部署文档搭建</em></p>
+<h5 id="二、搭建测试环境应该注意哪些？"><a href="#二、搭建测试环境应该注意哪些？" class="headerlink" title="二、搭建测试环境应该注意哪些？"></a>二、搭建测试环境应该注意哪些？</h5><pre><code>测试环境（JDK Tmacat MySQL）和生产环境的版本保持一致
+服务器部署架构、服务器类型尽量与生产环境保持一致
+一般先把数据库表相关操作完成，再进行代码部署</code></pre><h5 id="三、测试环境升级？"><a href="#三、测试环境升级？" class="headerlink" title="三、测试环境升级？"></a>三、测试环境升级？</h5><pre><code>完全升级：根据开发文档给的升级文档，查看代码包、数据库脚本包是否齐全，然后把测试环境的数据库、被测系统的代码先备份再删除，然后根据开发最新的文件和代码进行升级部署；升级只有做个基本的功能验证，如果验证失败，测试环境按之前的备份包进行回滚
+增量升级：从SVN上获取开发提交的测试补丁——停止Tomcat，备份webapps目录下部署的项目代码——使用升级补丁进行升级——清除日志——启动tomcat——验证是否进入被测系统</code></pre>
       
 
       
@@ -271,7 +248,7 @@ Tomcat解压并发布完成后，可以在浏览器看到所发布的项目</cod
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/25/测试复习一/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/26/软测环境搭建/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -285,18 +262,9 @@ Tomcat解压并发布完成后，可以在浏览器看到所发布的项目</cod
   
 <nav id="article-nav">
   
-    <a href="/2019/10/26/软测环境搭建/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/10/23/HTTP协议/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">第一次博客</div>
+    <a href="/2019/10/25/测试复习一/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">软测复习</div>
       <i class="icon-circle-right"></i>
     </a>
   
